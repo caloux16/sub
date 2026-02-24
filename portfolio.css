@@ -1,0 +1,174 @@
+body {
+  font-family: 'Raleway', 'Segoe UI', Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+.navbar-d8 {
+  background-color: #fd6a66; 
+}
+
+.navbar-d8 .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-d8 .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.navbar-d8 .nav-link:hover {
+  color: #029599 !important; 
+}
+
+.navbar-toggler {
+  background-color: #029599; 
+  border: none; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.navbar-toggler-icon {
+  filter: invert(60%) sepia(85%) saturate(800%) hue-rotate(350deg) brightness(105%) contrast(105%);
+}
+
+.navbar-d8 .nav-toggler {
+  color: #029599 !important;
+}
+
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(253, 106, 102, 0.8), rgba(253, 106, 102, 0.8)), url("../img/D8.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+
+.section-title {
+  color: #fd6a66;
+  font-weight: bold;
+  position: relative;
+  font-size: 2.5rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #029599;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+/* Portfolio Cards */
+.portfolio-card {
+  background: #fff;
+  border: 2px solid #029599;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.portfolio-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.portfolio-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.1);
+}
+
+.portfolio-description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+}
+
+.portfolio-title {
+  color: #fd6a66;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.portfolio-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* Hover Effects */
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hover-zoom1 {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom1:hover {
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+  background-color: #fd6a66 !important;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+    margin-top: 70px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
